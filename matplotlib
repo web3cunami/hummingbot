@@ -1,0 +1,19 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Генерация данных
+x = np.linspace(0, 2 * np.pi, 100)
+y = np.sin(x)
+
+# Создание графика
+plt.plot(x, y, label='sin(x)')
+
+# Настройки графика
+plt.title('Graph of sin(x)')
+plt.xlabel('x')
+plt.ylabel('sin(x)')
+plt.legend()
+plt.grid(True)
+
+# Отображение графика
+plt.show()
